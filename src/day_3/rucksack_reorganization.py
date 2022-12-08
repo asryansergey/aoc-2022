@@ -1,5 +1,4 @@
 from typing import List
-from collections import defaultdict
 
 
 def process_input(file_name):
