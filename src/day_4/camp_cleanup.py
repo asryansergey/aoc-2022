@@ -32,14 +32,14 @@ def overlaps(l_pair, r_pair) -> bool:
     return False
 
 
-def overlap_range_count_part_1(pairs_list: dict[int, List[int]]) -> int:
+def overlap_range_count_part_1(pairs_list: dict[int, list[tuple[int, int]]]) -> int:
     count = 0
     for p1, p2 in pairs_list.values():
         count += 1 if contains(p1, p2) else 0
     return count
 
 
-def overlap_range_count_part_2(pairs_list: dict[int, List[int]]) -> int:
+def overlap_range_count_part_2(pairs_list: dict[int, list[tuple[int, int]]]) -> int:
     count = 0
     for p1, p2 in pairs_list.values():
         count += 1 if overlaps(p1, p2) else 0

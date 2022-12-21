@@ -22,6 +22,7 @@ def round_score_part_1(shape_1, shape_2):
     else:
         return shape_value[shape_2]
 
+
 def round_score_part_2(shape_1, shape_2):
     win_pairs = {'A': 'Y', 'B': 'Z', 'C': 'X'}
     draw_pairs = {'A': 'X', 'B': 'Y', 'C': 'Z'}
